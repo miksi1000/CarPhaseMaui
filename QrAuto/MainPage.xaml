@@ -17,9 +17,9 @@
         <!-- Buttons -->
         <VerticalStackLayout Margin="0,100,0,0">
             <Image Source="autohuset.png"  Margin="20"/>
-            <Button Text="Vis alle biler"  Margin="10" Clicked="Button_Clicked"/>
+            <Button Text="Page 1"  Margin="10" Clicked="Button_Clicked"/>
             <Button Text="Page 2"  Margin="10" Clicked="Button_Clicked_1"/>
-            <Button Text="Page 3"  Margin="10" Clicked="Button_Clicked_2"/>
+            <Button Text="Vis Biler"  Margin="10" Clicked="Button_Clicked_2"/>
         </VerticalStackLayout>
     </Grid>
 

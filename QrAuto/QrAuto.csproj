@@ -53,6 +53,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="EasyConveyor" Version="1.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="ShowCar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -5,7 +5,6 @@
              Title="ShowCars">
 
 
-
     <ListView x:Name="ListContacts" ItemSelected="ListContacts_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -14,21 +13,33 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <Label Grid.Row="100" Grid.Column="1"
+                        <Label Grid.Row="0" Grid.Column="0"
+                           Text="Name:"
+                           FontAttributes="Bold"/>
+                        <Label Grid.Row="0" Grid.Column="1"
                            Text="{Binding Name}"
                            FontAttributes="Bold"/>
-                        <Label  Padding="80,0,0,0"  Grid.Row="1" Grid.Column="55"
+                        <Label Grid.Row="1" Grid.Column="0"
+                           Text="Serial Number:"
+                           FontAttributes="Bold"/>
+                        <Label Grid.Row="1" Grid.Column="1"
                            Text="{Binding SerialNumber}"
-                           FontAttributes="Bold" />
+                           FontAttributes="Bold"/>
+                        <Label Grid.Row="2" Grid.Column="0"
+                           Text="Department:"
+                           FontAttributes="Bold"/>
+                        <Label Grid.Row="2" Grid.Column="1"
+                           Text="{Binding Department}"
+                           FontAttributes="Bold"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
 </ContentPage>
