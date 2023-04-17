@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QrAuto.AddCar"
+             Title="AddCar">
+    <VerticalStackLayout>
+        <Label Text="Name"/>
+        <Entry x:Name="NameText" />
+        <Label Text="SerialNumber"/>
+        <Entry x:Name="SerialNumberText" />
+        <Label Text="Phasestart"/>
+        <Entry x:Name="PhaseStartText" />
+        <Label Text="PlateNumber"/>
+        <Entry x:Name="PlateNumberText" />
+        <Label Text="PhaseName"/>
+        <Entry x:Name="PhaseNameText" />
+        <Label Text="Department Address"/>
+        <Entry x:Name="DepartmentAddressText"/>
+
+
+
+        <Button Text="Tilføj bil" x:Name="SendButton" Clicked="SendButton_Clicked"/>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

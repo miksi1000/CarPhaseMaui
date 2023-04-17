@@ -14,7 +14,7 @@ namespace QrAuto
         public string PlateNumber { get; set; }
         public DateTime PhaseStart { get; set; }
         public string phase_name { get; set; }
-        public string Department_address { get; set; }
+        public string department_address { get; set; }
 
 
         //public Phase Phase_Id { get; set; }

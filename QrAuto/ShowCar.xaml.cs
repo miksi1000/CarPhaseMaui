@@ -10,7 +10,7 @@ public partial class ShowCar : ContentPage
 
         NameLabel.Text = $"Name: {car.Name}";
         SerialNumberLabel.Text = $"SerialNumber: {car.SerialNumber}";
-        DepartmentLabel.Text = $"Department: {car.Department_address}";
+        DepartmentLabel.Text = $"Department: {car.department_address}";
         PlateNumberLabel.Text = $"PlateNumber: {car.PlateNumber} ";
         PhaseStartLabel.Text = $"PhaseStart: {car.PhaseStart.ToString()}";
         PhaseNameLabel.Text = $"PhaseName: {car.phase_name} ";
