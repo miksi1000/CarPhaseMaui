@@ -17,9 +17,14 @@
         <Label Text="Department Address"/>
         <Entry x:Name="DepartmentAddressText"/>
 
+        
+
 
 
         <Button Text="Tilføj bil" x:Name="SendButton" Clicked="SendButton_Clicked"/>
+
+        <ActivityIndicator x:Name="Activity"/>
+
 
 
 

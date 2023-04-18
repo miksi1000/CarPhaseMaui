@@ -26,6 +26,9 @@ public partial class AddCar : ContentPage
         car.department_address = DepartmentAddressText.Text;
 
 
+        Activity.IsRunning = true;
+
+
         using (HttpClient client = new HttpClient())
         {
             var formContent = new FormUrlEncodedContent(new[]
@@ -59,7 +62,14 @@ public partial class AddCar : ContentPage
             }
         }
 
+        
+        //Thread.Sleep(5000);
 
+        await DisplayAlert("Success", "The car data was sent successfully.", "OK");
+
+        Activity.IsRunning = false;
+
+        await Navigation.PopAsync();
 
     }
 }

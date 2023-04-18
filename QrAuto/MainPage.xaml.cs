@@ -19,11 +19,13 @@ public partial class MainPage : ContentPage
         //App.Current.MainPage = new NavigationPage(new ShowCars());
     }
 
-	private void Button_Clicked_1(object sender, EventArgs e)
+	private async void Button_Clicked_1(object sender, EventArgs e)
 	{
-        App.Current.MainPage = new NavigationPage(new AddCar());
+        //App.Current.MainPage = new NavigationPage(new AddCar());
+        await Navigation.PushAsync(new AddCar());
+        
 
-	}
+    }
 
     
    
@@ -38,7 +40,8 @@ public partial class MainPage : ContentPage
             List<Car> cars = JsonConvert.DeserializeObject<List<Car>>(response);
             //listcontacts.itemssource = cars;
 
-            App.Current.MainPage = new NavigationPage(new ShowCars(cars));
+            //App.Current.MainPage = new NavigationPage(new ShowCars(cars));
+            await Navigation.PushAsync(new ShowCars(cars));
             //await Navigation.PushAsync(new ShowCars(cars));
 
         }
